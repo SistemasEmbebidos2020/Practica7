@@ -2,9 +2,9 @@
 #include <util/delay.h>
  
 int main(void){
-   DDRD |= 0b01100000;
-   TCCR0A = 0b11100011; 
-   TCCR0B = 0b00000001; 				  
+   DDRD |= 0b01100000; //SALIDA PINES PD5(OC0B) Y PD6(OC0A)
+   TCCR0A = 0b11100011; //TIMER0 PWMA// INVERTIDO A & NO INVERTIDO B &MODO RAPIDO
+   TCCR0B = 0b00000001; //SIN PREESCALADOR				 
    OCR0A = 0; //valor inicial de pwm para el pin OC0A
    OCR0B = 0; //valor inicial de pwm para el pin OC0B
 while(1){
