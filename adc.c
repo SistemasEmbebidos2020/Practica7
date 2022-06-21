@@ -1,5 +1,8 @@
 #include <avr/io.h>
 #include <util/delay.h>
+#include "uart.h"
+#include <stdlib.h>
+
 int main()
  {
 DDRD = 0XFF;
@@ -28,4 +31,3 @@ while (1)
 }
    return 0;
  }
-
