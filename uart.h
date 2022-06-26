@@ -74,7 +74,7 @@ void serial_print_char(unsigned char caracter){
 //////////////////////////////////////////////
 //transmisión de cadenas de caracteres con el módulo USART AVR modo asíncrono
 ///////////////////////////////////////////////
-void serial_print_str(char *cadena){	//cadena de caracteres de tipo char
+void serial_print_str(const char *cadena){	//cadena de caracteres de tipo char
 	while(*cadena !=0x00){			//mientras el último valor de la cadena sea diferente
 							        //al caracter nulo
 		serial_print_char(*cadena);	//transmite los caracteres de cadena
