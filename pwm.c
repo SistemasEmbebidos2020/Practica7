@@ -1,6 +1,6 @@
 #include <avr/io.h>
 #include <util/delay.h>
- 
+
 int main(void){
    DDRD |= 0b01100000; //SALIDA PINES PD5(OC0B) Y PD6(OC0A)
    TCCR0A = 0b11100011; //TIMER0 PWMA// INVERTIDO A & NO INVERTIDO B &MODO RAPIDO
