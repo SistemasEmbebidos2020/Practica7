@@ -13,13 +13,13 @@ while(1){
          OCR0B++;
          _delay_ms (10);
       }while(OCR0A<255);
-      _delay_ms (2000L);
+      _delay_ms (2000);
 do{
          OCR0A--;
          OCR0B--;
          _delay_ms (10);
       }while(OCR0A>0);
-      _delay_ms (3000L);
+      _delay_ms (3000);
     }
    return 0;
 }
