@@ -1,6 +1,5 @@
 #include <avr/io.h>
 #include <util/delay.h>
-#include "uart.h"
 #include <stdlib.h>
 
 void mostrarleds(){
