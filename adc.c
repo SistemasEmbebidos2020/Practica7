@@ -22,7 +22,7 @@ else 			 {PORTB=63; PORTD |=  0B11110000;  }
 
 int main()
  {
- DDRB |= 0X00111111; //poner como salidas a los 6 primeros bits del puerto B
+ DDRB |= 0B00111111; //poner como salidas a los 6 primeros bits del puerto B
  DDRD |= 0B11110000; //poner como salidas a los 4 ultimos bits del puerto D
 	
 ADMUX = 0B01000001;	//AVCC- AREF y ADC1
